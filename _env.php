@@ -15,19 +15,14 @@ define("SERVIDORBD",              "localhost");
 define("USUARIOBD",               "root");
 define("SENHABD",                 '');
 
-//Produção
-// define("BANCO",                "");
-// define("SERVIDORBD",           "177.74.2.213");
-// define("USUARIOBD",            "root");
-// define("SENHABD",              '$GBd53Pl@N19');
 
 //Definições para envio de Email
 define("EMAIL_TPL",               $_SERVER['DOCUMENT_ROOT'].ROOT_PATH."emails");
 define("EMAIL_TPL_CACHE",         $_SERVER['DOCUMENT_ROOT'].ROOT_PATH."emails");
-define("MAIL_USERNAME",           "sigconv@sistemas.pa.gov.br");
-define("MAIL_PASS",               "Prodepa0025");
-define("MAIL__FROM",              "SEPLAD");
-define("MAIL__REPLY",             "sigconv@seplan.pa.gov.br");
+define("MAIL_USERNAME",           "");
+define("MAIL_PASS",               "");
+define("MAIL__FROM",              "");
+define("MAIL__REPLY",             "");
 
 
 ?>
