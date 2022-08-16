@@ -1,0 +1,70 @@
+/* Add here all your CSS customizations */
+#datatable-tabletools_filter label { float: right; }
+.select-acoes {
+            padding-left: 0;
+            float: left;
+            margin-bottom: 10px;
+            z-index: 1;
+}
+.icon-search {
+    float: right;
+}
+
+html body .main-footer {
+    background-color: #171717;
+    text-align: center;
+    padding: 15px 5px  15px 5px ;
+}
+.alert {
+padding-bottom: 0;
+}
+.alert p {
+    margin-bottom: 10px;
+}
+
+.btn-app {
+    border-radius: 3px;
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    height: 60px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 12px;
+}
+
+.btn-app>.fa, .btn-app>.glyphicon, .btn-app>.ion {
+    font-size: 20px;
+    display: block;
+}
+
+.w-1 {
+    width: 200px;
+}
+.w-2 {
+    width: 300px;
+}
+.w-3 { 
+    width: 400px;
+}
+.text-xs {
+    font-size: 12px ;
+}
+
+.notifications .notification-menu .content {
+    padding-left: 0;
+    padding-right: 0;
+}
+.notifications .notification-menu .content .text-right { margin-right: 12px;}
+
+.notification-menu .content ul li {
+    margin-bottom: 0;
+    padding: 5px 5px 13px 12px;
+    border-bottom:#F5F5F5 1px solid;
+}
+.notification-menu .content ul li:hover{
+    background-color: #e8f4fa;
+}
