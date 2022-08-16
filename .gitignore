@@ -1,3 +1,7 @@
 #arquivo de configuração de pastas, email e conexão
 env.php
 /env.php
+/_env.php
+_env.php
+*env.php
+*env.*
