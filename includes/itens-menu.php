@@ -35,10 +35,23 @@ $vvMenu = array(
             'class'=>"",
             'subitem'=>[]
     ],
-    
 
     // ---- Incluir aqui novos itens
 
+    "Empreendimentos" => [
+        'link'=> "?action=Empreendimento.preparaLista",
+        'icon'=> "el el-shopping-cart ",
+        'target'=> "",
+        'class'=>"",
+        'subitem'=> [
+            "Unidades" => [
+                'link'=> "?action=Unidade.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> []
+            ]
+        ]
+    ],
      //-------------------------------
    
 
