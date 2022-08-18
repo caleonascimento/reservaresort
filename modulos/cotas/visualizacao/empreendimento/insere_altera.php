@@ -37,32 +37,44 @@
  						
 										<input type='hidden' name='fId' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getId() : ""; ?>'/>
 										<div class="row form-group">
-											<div class="col-lg-6">
-												<label class="col-form-label" for="Endereco">Endereco:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Endereco' placeholder='Endereco' name='fEndereco'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
+
+											<div class="col-lg-7">
+												<label class="col-form-label" for="Endereco">Nome:<span class="required">*</span></label>
+												<input class="form-control" type='text' id='Endereco' placeholder='Nome' name='fEndereco'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 
 
 										</div>
 										<div class="row form-group">
-											<div class="col-lg-4">
+
+											<div class="col-lg-3">
 												<label class="col-form-label" for="Cep">Cep:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Cep' placeholder='Cep' name='fCep'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getCep() : ""; ?>' title="Este campo é obrigatório." />
+											</div>
+
+											<div class="col-lg-4">
+												<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
+												<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
+												<option>Um quarto</option>
+												<option>Dois quartos</option>
+												</select>
 											</div>
 										</div>
 										<div class="row form-group">
 											
-											<div class="col-lg-4">
-												<label class="col-form-label" for="Tipo">Tipo:<span class="required">*</span></label>
+											<div class="col-lg-7">
+												<label class="form-label" for="Tipo">Endereço:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 											
 										</div>
 										<div class="row form-group">
-											<div class="col-lg-4">
+
+											<div class="col-lg-7">
 												<label class="col-form-label" for="Descricao">Descricao:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
+
 										</div>
  					</div>
                                      	<footer class="card-footer">
