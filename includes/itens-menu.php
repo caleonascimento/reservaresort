@@ -35,12 +35,54 @@ $vvMenu = array(
             'class'=>"",
             'subitem'=>[]
     ],
-    
 
     // ---- Incluir aqui novos itens
 
+    "Empreendimentos" => [
+        'link'=> "#",
+        'icon'=> "fas fa-university",
+        'target'=> "",
+        'class'=>"",
+        'subitem'=> [
+            "Cadastrar Empreendimento" => [
+                'link'=> "?action=Empreendimento.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> []                    
+            ],"Cadastrar Hospede" => [
+                'link'=> "?action=Usuario.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> []                                    
+            ],"Cota" => [
+                'link'=> "?action=Cota.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> [],
+                        ]
+                    ]          
+                ],
+        "Reservas" => [
+            'link'=> "#",
+            'icon'=> "fas fa-marker",
+            'target'=> "",
+            'class'=>"",
+            'subitem'=> [
+                "Calendario" => [
+                    'link'=> "?action=Calendario.preparaLista",
+                    'target'=> "",
+                    'class'=>"",
+                    'subitem'=> []
+            ],"Unidade" => [
+                'link'=> "?action=Unidade.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> [],
+                    ]
+                ]
+            ],
      //-------------------------------
-   
+// Empreendimento.preparaFormulario&sOP=Cadastrar 
 
     "Acesso" => [
         'link'=>"#",

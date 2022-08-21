@@ -24,7 +24,8 @@
          unset($_SESSION['oUnidade']);
  
          $_REQUEST['voEmpreendimento'] = $this->recuperar("Empreendimento", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

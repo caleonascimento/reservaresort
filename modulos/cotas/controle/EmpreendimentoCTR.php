@@ -14,14 +14,15 @@
  
      public function preparaFormulario(){
          $oEmpreendimento = false;
- 
+        
+        
          if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
               $nIdEmpreendimento = ($_POST['fIdEmpreendimento'][0]) ? $_POST['fIdEmpreendimento'][0] : $_GET['nIdEmpreendimento'];
               $oEmpreendimento = $this->recuperar('Empreendimento', array('id'=>$nIdEmpreendimento));
          }
  
-         $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
-         unset($_SESSION['oEmpreendimento']);
+        //  $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
+        //  unset($_SESSION['oEmpreendimento']);
  
          
  
@@ -42,6 +43,7 @@
             $oEmpreendimento = new Empreendimento();
              	
 			$oEmpreendimento->setId($_POST['fId']);
+            $oEmpreendimento->setNome($_POST['fNome']);
 			$oEmpreendimento->setEndereco($_POST['fEndereco']);
 			$oEmpreendimento->setCep($_POST['fCep']);
 			$oEmpreendimento->setTipo($_POST['fTipo']);
