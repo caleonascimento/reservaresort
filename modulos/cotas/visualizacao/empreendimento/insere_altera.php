@@ -14,7 +14,15 @@
          <meta name="description" content="<?php echo DESCRIPTION; ?>">
          <meta name="author" content="<?php echo AUTHOR; ?>">
          <?php include_once("includes/head.php"); ?>
+
+		<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
+		<script type="text/javascript" src="jquery.maskedinput-1.1.4.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#cep").mask("99999-999");});</script>
+
      </head>
+	 	
  
      <?php include_once("includes/head-body.php"); ?>
  
@@ -30,7 +38,7 @@
  							<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
  							<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
  						</div>
- 						<h2 class="card-title"><?php echo $sOP; ?> empreendimento </h2>
+ 						<h2 class="card-title"><?php echo $sOP; ?> Empreendimento </h2>
  						<!--<p class="card-subtitle"> Validation summary will display an error list above the form. </p>-->
  					</header>
  					<div class="card-body">
@@ -55,8 +63,10 @@
 											<div class="col-lg-4">
 												<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
 												<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
-												<option>1</option>
-												<option>2</option>
+												<option value="">Selecione</option>
+												<option value="1">Resort</option>
+												<option value="2">Residencial</option>
+
 												</select>
 											</div>
 										</div>
@@ -71,8 +81,8 @@
 										<div class="row form-group">
 
 											<div class="col-lg-7">
-												<label class="col-form-label" for="Descricao">Descricao:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
+												<label class="col-form-label" for="Descricao">Descricao:</label>
+												<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 
 										</div>

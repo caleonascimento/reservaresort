@@ -16086,3 +16086,939 @@ if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
 //Inserido em : 21/08/2022 07:41:35
 if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
 	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:13:21
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:13:21
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:13:21
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:20:37
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:20:37
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:20:37
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:21:01
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:21:01
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:21:01
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:21:22
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:21:23
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:21:23
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:22:35
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:22:35
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:22:35
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:26:13
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:26:13
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 15:26:13
+if(!isset($_SESSION['classes']['Empreendimento']))
+	 $_SESSION['classes']["Empreendimento"] = "modulos/cotas/modelo/Empreendimento.php";
+//Inserido em : 22/08/2022 15:26:13
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 15:26:14
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 16:30:40
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 16:30:40
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 16:30:43
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 16:30:43
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 16:30:45
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 16:30:45
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:16:34
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:16:34
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:16:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:16:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:16:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:16:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:18:41
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:18:41
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:09
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:09
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:11
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:11
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:15
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:15
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:15
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:15
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:20
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:20
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:20
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:20
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:23
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:23
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:24
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:24
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:26
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:27
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:19:32
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:19:32
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:21:56
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:21:56
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:21:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:21:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:48:36
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:48:36
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:48:43
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:48:43
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:48:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:48:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:54:14
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:54:14
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:54:15
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:54:15
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:54:37
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:54:37
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:54:39
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:54:39
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 19:56:07
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 19:56:08
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:14:31
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:14:31
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:14:31
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:14:31
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:14:53
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:14:53
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:14:54
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:14:54
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:37
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:37
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:40
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:41
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:41
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:41
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:15:59
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:15:59
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:16:00
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:16:00
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:17:08
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:17:08
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:19:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:19:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:19:49
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:19:49
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:20:35
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:20:35
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:20:36
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:20:36
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:20:40
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:20:40
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:20:40
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:20:40
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:20:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:20:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:21:00
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:21:00
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:22:03
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:22:03
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:22:03
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:22:04
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:02
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:02
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:02
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:02
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:18
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:18
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:19
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:19
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:41
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:41
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:44
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:45
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:45
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:45
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:47
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:53
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:53
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:23:55
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:23:55
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:25:50
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:25:50
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:26:22
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:26:22
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:26:22
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:26:22
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:26:31
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:26:31
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:26:32
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:26:32
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:27:47
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:27:47
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:27:52
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:27:53
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:27:57
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:27:57
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:28:20
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:28:20
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:28:24
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:28:24
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:31:33
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:31:33
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:31:33
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:31:33
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:31:57
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:31:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:31:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:31:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:32:29
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:32:29
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:32:29
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:32:29
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:32:57
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:32:57
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:32:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:32:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:33:10
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:33:10
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:33:13
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:33:13
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:33:15
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:33:15
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:35:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:35:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:35:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:35:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:00
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:00
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:03
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:03
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:03
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:03
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:14
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:14
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:17
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:17
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:36:17
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:36:17
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:40:23
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:40:23
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:40:23
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:40:23
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:41:39
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:41:39
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:41:39
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:41:39
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:43:04
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:43:04
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:43:06
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:43:06
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:45:10
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:45:10
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:46:23
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:46:23
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:46:41
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:46:41
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:47:38
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:47:39
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:47:41
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:47:42
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:48:05
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:48:05
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:48:27
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:48:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:48:27
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:48:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:49:27
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:49:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:49:28
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:49:28
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:49:38
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:49:38
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:49:49
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:49:50
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:49:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:49:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:50:39
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:50:39
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:50:39
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:50:40
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:51:09
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:51:09
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:51:10
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:51:10
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:51:17
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:51:17
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:51:18
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:51:18
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 20:54:28
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 20:54:28
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:00:33
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:00:33
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:00
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:00
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:01
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:01
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:27
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:27
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:42
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:42
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:42
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:42
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:50
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:50
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:01:57
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:01:57
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:02:05
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:02:05
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:02:38
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:02:38
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:02:45
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:02:45
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:02:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:02:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:03:38
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:03:38
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:03:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:03:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:03:51
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:03:51
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:03:58
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:03:58
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:13:48
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:13:48
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:14:17
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:14:17
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:14:43
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:14:43
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:15:54
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:15:54
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:16:54
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:16:54
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:17:31
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:17:31
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:18:04
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:18:04
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:18:42
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:18:42
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:21:07
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:21:07
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:22:33
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:22:33
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:23:11
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:23:11
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:23:19
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:23:19
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:23:35
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:23:35
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 22/08/2022 21:24:01
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 22/08/2022 21:24:01
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";

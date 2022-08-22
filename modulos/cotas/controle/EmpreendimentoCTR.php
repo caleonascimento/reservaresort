@@ -21,8 +21,8 @@
               $oEmpreendimento = $this->recuperar('Empreendimento', array('id'=>$nIdEmpreendimento));
          }
  
-        //  $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
-        //  unset($_SESSION['oEmpreendimento']);
+         $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
+         unset($_SESSION['oEmpreendimento']);
  
          
  
