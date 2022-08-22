@@ -44,18 +44,18 @@ $vvMenu = array(
         'target'=> "",
         'class'=>"",
         'subitem'=> [
-            "Cadastrar Empreendimento" => [
+            "Gerenciar Empreendimento" => [
                 'link'=> "?action=Empreendimento.preparaLista",
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> []                    
-            ],"Cadastrar Hospede" => [
-                'link'=> "?action=Usuario.preparaLista",
+            ],"Cotas" => [
+                'link'=> "?action=Cota.preparaLista",
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> []                                    
-            ],"Cota" => [
-                'link'=> "?action=Cota.preparaLista",
+            ],"Gerenciar Unidade" => [
+                'link'=> "?action=Unidade.preparaLista",
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> [],
