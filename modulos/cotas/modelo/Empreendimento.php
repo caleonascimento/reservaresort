@@ -14,6 +14,14 @@
 	*/
 	private $nId;
 	/**
+	* @campo nome
+	* @var String
+	* @primario false
+	* @nulo false
+	* @auto-increment false
+	*/
+	private $sNome;
+	/**
 	* @campo endereco
 	* @var String
 	* @primario false
@@ -57,6 +65,12 @@
 	 }
 	 public function getId() {
 		return $this->nId;
+	 }
+	 public function setNome($sNome) {
+		$this->sNome = $sNome;
+	 }
+	 public function getNome() {
+		return $this->sNome;
 	 }
 	 public function setEndereco($sEndereco) {
 		$this->sEndereco = $sEndereco;

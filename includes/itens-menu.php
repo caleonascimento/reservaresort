@@ -50,7 +50,12 @@ $vvMenu = array(
                 'class'=>"",
                 'subitem'=> []                    
             ],"Cadastrar Hospede" => [
-                'link'=> "?action=Empreendimento.preparaLista",
+                'link'=> "?action=Usuario.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> []                                    
+            ],"Cota" => [
+                'link'=> "?action=Cota.preparaLista",
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> [],
@@ -68,6 +73,11 @@ $vvMenu = array(
                     'target'=> "",
                     'class'=>"",
                     'subitem'=> []
+            ],"Unidade" => [
+                'link'=> "?action=Unidade.preparaLista",
+                'target'=> "",
+                'class'=>"",
+                'subitem'=> [],
                     ]
                 ]
             ],
