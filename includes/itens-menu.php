@@ -49,7 +49,7 @@ $vvMenu = array(
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> []                    
-            ],"Cotas" => [
+            ],"Gerenciar Cotas" => [
                 'link'=> "?action=Cota.preparaLista",
                 'target'=> "",
                 'class'=>"",
