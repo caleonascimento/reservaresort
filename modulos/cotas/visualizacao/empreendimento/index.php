@@ -21,7 +21,7 @@
    	<!-- start: page (main content) -->
          <section class="card">
                <header class="card-header">
-                     <h2 class="card-title">empreendimento</h2>
+                     <h2 class="card-title">Gerenciar Empreendimento</h2>
                </header>
                <div class="card-body">
      		    <form method="post" action="" name="formEmpreendimento" id="formEmpreendimento" class="formulario">
@@ -34,7 +34,7 @@
      					<option value="?action=Empreendimento.processaFormulario&sOP=Excluir" lang="2">Excluir empreendimento(s) selecionado(s)</option>
      				</select>
      			 </div>
- 			 <?php if(is_array($voEmpreendimento)){ ?>                                          
+ 			 <?php if(is_array($voEmpreendimento) && count($voEmpreendimento)){ ?>                                          
  				   <table class="table table-bordered table-striped mb-0" id="datatable-tabletools">
                                         <thead>
                                             <tr>
@@ -63,7 +63,12 @@
  					<?php } ?>                                  
  				      </tbody>
                                    </table>
- 			 <?php } ?>          
+ 			 <?php } else { ?>
+                        <table class="table table-bordered table-striped mb-0" >
+                              <tr><td>Nem um item cadastrado.</td></tr>
+                        </table>
+                   
+                 <?php } ?>          
                      </form>
                </div><!-- card-body -->
           </section><!-- card -->
