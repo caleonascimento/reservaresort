@@ -21,7 +21,7 @@
    	<!-- start: page (main content) -->
          <section class="card">
                <header class="card-header">
-                     <h2 class="card-title">usuario</h2>
+                     <h2 class="card-title">Gerenciar Usuario</h2>
                </header>
                <div class="card-body">
      		    <form method="post" action="" name="formUsuario" id="formUsuario" class="formulario">
@@ -34,7 +34,7 @@
      					<option value="?action=Usuario.processaFormulario&sOP=Excluir" lang="2">Excluir usuario(s) selecionado(s)</option>
      				</select>
      			 </div>
- 			 <?php if(is_array($voUsuario)){ ?>                                          
+				  <?php if(is_array($voUsuario) && count($voUsuario)){ ?>                                          
  				   <table class="table table-bordered table-striped mb-0" id="datatable-tabletools">
                                         <thead>
                                             <tr>
@@ -72,7 +72,12 @@
 									 <td><?php echo $oUsuario->getTipo(); ?></td>						
 									 <td><?php echo $oUsuario->getIdAcessoUsuario(); ?></td>
                                                  </tr>
- 					<?php } ?>                                  
+							 <?php } ?>  
+ 					<?php } else { ?> 
+						<table class="table table-bordered table-striped mb-0" >
+                              <tr><td>Nem um usuario cadastrado.</td></tr>
+                        </table>
+						
  				      </tbody>
                                    </table>
  			 <?php } ?>          

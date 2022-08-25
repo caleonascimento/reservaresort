@@ -94,7 +94,10 @@
 											<div class="col-lg-4">
 												<label class="col-form-label" for="AcessoUsuario">Id_acesso_usuario:<span class="required">*</span></label>
 												<select name='fIdAcessoUsuario' data-plugin-selectTwo class="form-control populate"  required  title="Este campo é obrigatório." >
-													<option value=''>Selecione</option>
+													<option value=''>Escolha seu Id Usuario:</option>
+													<option value=''>Admin</option>
+													<option value=''>Colaborador</option>
+													<option value=''>Cliente</option>
 <?php													 $sSelected = "";
 													if($voAcessoUsuario) 
 														foreach($voAcessoUsuario as $oAcessoUsuario) {

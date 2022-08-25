@@ -28,8 +28,8 @@
   				 <div class="card-actions">
   				 	<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
   				 </div>
-  				 <h2 class="card-title">cotas</h2>
-  				 <p class="card-subtitle"> empreendimento  </p>
+  				 <h2 class="card-title">Detalhar</h2>
+  				 <p class="card-subtitle"> Empreendimento  </p>
   			   </header>
                             <div class="card-body">
                                  
