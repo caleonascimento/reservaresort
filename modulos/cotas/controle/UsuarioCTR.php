@@ -20,11 +20,12 @@
               $oUsuario = $this->recuperar('Usuario', array('id'=>$nIdUsuario));
          }
  
-         $_REQUEST['oUsuario'] = (@$_SESSION['oUsuario']) ? $_SESSION['oUsuario'][0] : $oUsuario[0];
-         unset($_SESSION['oUsuario']);
+        //  $_REQUEST['oUsuario'] = (@$_SESSION['oUsuario']) ? $_SESSION['oUsuario'][0] : $oUsuario[0];
+        //  unset($_SESSION['oUsuario']);
  
          $_REQUEST['voAcessoUsuario'] = $this->recuperar("AcessoUsuario", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

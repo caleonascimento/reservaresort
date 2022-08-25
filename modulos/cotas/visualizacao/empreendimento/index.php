@@ -65,7 +65,7 @@
                                    </table>
  			 <?php } else { ?>
                         <table class="table table-bordered table-striped mb-0" >
-                              <tr><td>Nem um item cadastrado.</td></tr>
+                              <tr><td>Nem um usuario cadastrado.</td></tr>
                         </table>
                    
                  <?php } ?>          

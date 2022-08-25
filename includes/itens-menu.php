@@ -54,8 +54,8 @@ $vvMenu = array(
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> []                                    
-            ],"Gerenciar Unidade" => [
-                'link'=> "?action=Unidade.preparaLista",
+            ],"Gerenciar Usuario" => [
+                'link'=> "?action=Usuario.preparaLista",
                 'target'=> "",
                 'class'=>"",
                 'subitem'=> [],
