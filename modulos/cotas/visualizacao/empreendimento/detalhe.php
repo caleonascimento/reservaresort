@@ -29,7 +29,7 @@
   				 	<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
   				 </div>
   				 <h2 class="card-title">Detalhar</h2>
-  				 <p class="card-subtitle"> Empreendimento  </p>
+  				 <p class="card-subtitle"> EMPREENDIMENTO </p>
   			   </header>
                             <div class="card-body">
                                  
