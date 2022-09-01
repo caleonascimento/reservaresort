@@ -30,7 +30,7 @@
  							<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
  							<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
  						</div>
- 						<h2 class="card-title"><?php echo $sOP; ?> usuario </h2>
+ 						<h2 class="card-title"><?php echo $sOP; ?> Usuario </h2>
  						<!--<p class="card-subtitle"> Validation summary will display an error list above the form. </p>-->
  					</header>
  					<div class="card-body">
@@ -44,13 +44,13 @@
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="Cpf">Cpf:<span class="required">*</span></label>
+												<label class="col-form-label" for="Cpf">CPF:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Cpf' placeholder='Cpf' name='fCpf'  required   value='<?php echo ($oUsuario) ? $oUsuario->getCpf() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="Rg">Rg:<span class="required">*</span></label>
+												<label class="col-form-label" for="Rg">RG:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Rg' placeholder='Rg' name='fRg'  required   value='<?php echo ($oUsuario) ? $oUsuario->getRg() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
@@ -62,7 +62,7 @@
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="Cep">Cep:<span class="required">*</span></label>
+												<label class="col-form-label" for="Cep">CEP:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Cep' placeholder='Cep' name='fCep'  required   value='<?php echo ($oUsuario) ? $oUsuario->getCep() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
@@ -80,7 +80,7 @@
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="DataNasc">Data_nasc:<span class="required">*</span></label>
+												<label class="col-form-label" for="DataNasc">Nascimento:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='DataNasc' placeholder='Data_nasc' name='fDataNasc'  required   value='<?php echo ($oUsuario) ? $oUsuario->getDataNascFormatado() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
@@ -92,9 +92,9 @@
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="AcessoUsuario">Id_acesso_usuario:<span class="required">*</span></label>
+												<label class="col-form-label" for="AcessoUsuario">Perfil do Usuario:<span class="required">*</span></label>
 												<select name='fIdAcessoUsuario' data-plugin-selectTwo class="form-control populate"  required  title="Este campo é obrigatório." >
-													<option value=''>Escolha seu Id Usuario:</option>
+													<option value=''>Select:</option>
 													<option value=''>Admin</option>
 													<option value=''>Colaborador</option>
 													<option value=''>Cliente</option>
