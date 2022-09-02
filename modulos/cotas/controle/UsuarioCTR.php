@@ -51,7 +51,7 @@
 			$oUsuario->setCep($_POST['fCep']);
 			$oUsuario->setFone($_POST['fFone']);
 			$oUsuario->setEmail($_POST['fEmail']);
-			$oUsuario->setDataNascBanco($_POST['fDataNasc']);
+			// $oUsuario->setDataNascBanco($_POST['fDataNasc']);
 			$oUsuario->setTipo($_POST['fTipo']);
 			$oUsuario->setIdAcessoUsuario($_POST['fIdAcessoUsuario']);
  
