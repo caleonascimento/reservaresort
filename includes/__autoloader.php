@@ -19,7 +19,7 @@ if (!file_exists(__CACHE_DIR))
 
 /* NOTA:  No PHP 7 as instancias das classes gravadas na sessão são processadas pelo autoloader antes das variáveis de sessão serem instanciadas,
       nesse caso não é possível verificar se a variável com path da classe está alocada, pois os objetos das classes gravados nas sessões são
-      carregados primeiro. Nesses casos as sessões ficam com o valor NFC - Normalization Form C (NFC) - Canonical Decomposition followed by Canonical Composition.
+      carregados primeiro. Desse modo as sessões ficam com o valor NFC - Normalization Form C (NFC) - Canonical Decomposition followed by Canonical Composition.
       Nesses casos o autoloader acaba escrevendo repetidamente as classes no arquivo session_cache, para corrigir isso é verificado se
       $_SESSION['classes'] foi setado e se é um array, ou também pode ser verificado se possui o valor NFC.
 */

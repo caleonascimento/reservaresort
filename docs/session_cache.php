@@ -19635,3 +19635,39 @@ if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
 //Inserido em : 30/08/2022 21:58:46
 if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
 	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 04/09/2022 19:43:23
+if(!isset($_SESSION['classes']['Controller']))
+	 $_SESSION['classes']["Controller"] = "classes/Controller.php";
+//Inserido em : 04/09/2022 19:43:34
+if(!isset($_SESSION['classes']['AcessoUsuario']))
+	 $_SESSION['classes']["AcessoUsuario"] = "modulos/acesso/modelo/AcessoUsuario.php";
+//Inserido em : 04/09/2022 19:43:34
+if(!isset($_SESSION['classes']['Persistencia']))
+	 $_SESSION['classes']["Persistencia"] = "classes/persistencia/Persistencia.php";
+//Inserido em : 04/09/2022 19:43:34
+if(!isset($_SESSION['classes']['Interpretador']))
+	 $_SESSION['classes']["Interpretador"] = "classes/persistencia/Interpretador.php";
+//Inserido em : 04/09/2022 19:43:35
+if(!isset($_SESSION['classes']['Descritor']))
+	 $_SESSION['classes']["Descritor"] = "classes/persistencia/Descritor.php";
+//Inserido em : 04/09/2022 19:43:35
+if(!isset($_SESSION['classes']['AtributoClasse']))
+	 $_SESSION['classes']["AtributoClasse"] = "classes/persistencia/AtributoClasse.php";
+//Inserido em : 04/09/2022 19:43:35
+if(!isset($_SESSION['classes']['CampoTabela']))
+	 $_SESSION['classes']["CampoTabela"] = "classes/persistencia/CampoTabela.php";
+//Inserido em : 04/09/2022 19:43:36
+if(!isset($_SESSION['classes']['BancoDeDados']))
+	 $_SESSION['classes']["BancoDeDados"] = "classes/bancoDeDados/BancoDeDados.php";
+//Inserido em : 04/09/2022 19:43:36
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 04/09/2022 19:43:36
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
+//Inserido em : 04/09/2022 19:43:37
+if(!isset($_SESSION['classes']['AcessoGrupoUsuario']))
+	 $_SESSION['classes']["AcessoGrupoUsuario"] = "modulos/acesso/modelo/AcessoGrupoUsuario.php";
+//Inserido em : 04/09/2022 19:43:37
+if(!isset($_SESSION['classes']['AcessoPermissaoGrupo']))
+	 $_SESSION['classes']["AcessoPermissaoGrupo"] = "modulos/acesso/modelo/AcessoPermissaoGrupo.php";
