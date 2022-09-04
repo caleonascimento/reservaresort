@@ -81,7 +81,7 @@
 										<div class="row form-group">
 											<div class="col-lg-4">
 												<label class="col-form-label" for="DataNasc">Nascimento:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='DataNasc' placeholder='Data_nasc' name='fDataNasc'  required   value='<?php echo ($oUsuario) ? $oUsuario->getDataNascFormatado() : ""; ?>' title="Este campo é obrigatório." />
+												<input class="form-control" type='text' id='DataNasc' placeholder='Nascimento' name='fDataNasc'  required   value='<?php echo ($oUsuario) ? $oUsuario->getDataNascFormatado() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
 										<div class="row form-group">

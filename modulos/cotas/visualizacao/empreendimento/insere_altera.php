@@ -48,8 +48,6 @@
 												<label class="col-form-label" for="Nome">Nome:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Nome' placeholder='Nome' name='fNome'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getNome() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
-
-
 										</div>
 										<div class="row form-group">
 
@@ -61,10 +59,9 @@
 											<div class="col-lg-4">
 												<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
 												<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
-												<option value="">Selecione</option>
-												<option value="1">Resort</option>
-												<option value="2">Residencial</option>
-
+													<option value="">Selecione</option>
+													<option value="1">Resort</option>
+													<option value="2">Residencial</option>
 												</select>
 											</div>
 										</div>
@@ -72,7 +69,7 @@
 											
 											<div class="col-lg-7">
 												<label class="form-label" for="Endereco">Endereço:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Endereco' placeholder='Endereco' name='fEndereco'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
+												<input class="form-control" type='text' id='Logradouro' placeholder='Endereco' name='fEndereco'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 											
 										</div>
@@ -145,10 +142,7 @@
 						 console.log(dados)
 						 if (!("erro" in dados)) {
 							 //Atualiza os campos com os valores da consulta.
-							 $("#Logradouro").val(dados.logradouro);
-							 $("#Bairro").val(dados.bairro);
-							 $("#Cidade").val(dados.localidade);
-							 $("#Uf").val(dados.uf);
+							 $("#Logradouro").val(dados.logradouro + ",  " + dados.bairro + " - "+ dados.localidade + "/"+ dados.uf);						
 						 } //end if.
 						 else {
 							 //CEP pesquisado não foi encontrado.
