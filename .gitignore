@@ -6,3 +6,5 @@ _env.php
 *env.php
 *env.*
 docs/session_cache.php
+/docs/session_cache.php
+*/docs/session_cache.php
