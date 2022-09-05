@@ -45,7 +45,7 @@
 			$oEmpreendimento->setId($_POST['fId']);
             $oEmpreendimento->setNome($_POST['fNome']);
 			$oEmpreendimento->setEndereco($_POST['fEndereco']);
-			$oEmpreendimento->setCep($_POST['fCep']);
+			$oEmpreendimento->setCep(preg_replace('/[^\da-z]/i', '', $_POST['fCep']));
 			$oEmpreendimento->setTipo($_POST['fTipo']);
 			$oEmpreendimento->setDescricao($_POST['fDescricao']);
  
@@ -70,6 +70,7 @@
  
          switch($sOP){
              case "Cadastrar":
+               
                  if($this->inserir($oEmpreendimento)) {
                      unset($_SESSION['oEmpreendimento']);
                      setMessage("empreendimento inserido com sucesso!", 2);

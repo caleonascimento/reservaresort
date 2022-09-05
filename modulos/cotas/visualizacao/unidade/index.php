@@ -21,14 +21,15 @@
    	<!-- start: page (main content) -->
          <section class="card">
                <header class="card-header">
-                     <h2 class="card-title">unidade</h2>
+                     <h2 class="card-title"><?php echo $oEmpreedimento->getNome();?></h2>
+                     <h3>Gerenciar Unidades</h3>
                </header>
                <div class="card-body">
      		    <form method="post" action="" name="formUnidade" id="formUnidade" class="formulario">
      			 <div class='form-group col-md-3 select-acoes'>
      				 <select class="form-control Acoes" name="acoes" id="acoesUnidade" onChange="JavaScript: submeteForm('Unidade')">
      					<option value="" selected>Ações...</option>
-     					<option value="?action=Unidade.preparaFormulario&sOP=Cadastrar" lang="0">Cadastrar novo unidade</option>
+     					<option value="?action=Unidade.preparaFormulario&sOP=Cadastrar&idEmpreendimento=<?php echo $_REQUEST['id'];?>" lang="0">Cadastrar novo unidade</option>
      					<option value="?action=Unidade.preparaFormulario&sOP=Alterar" lang="1">Alterar unidade selecionado</option>
      					<option value="?action=Unidade.preparaFormulario&sOP=Detalhar" lang="1">Detalhar unidade selecionado</option>
      					<option value="?action=Unidade.processaFormulario&sOP=Excluir" lang="2">Excluir unidade(s) selecionado(s)</option>

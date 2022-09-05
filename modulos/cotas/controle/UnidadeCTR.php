@@ -4,6 +4,15 @@
  	private $_PATHVIEW = "modulos/cotas/visualizacao/unidade";
  
  	public function preparaLista(){
+
+        if(!isset($_REQUEST['id']) || (isset($_REQUEST['id']) && empty($_REQUEST['id']))){
+            setMessage("Id do empreendimento não encontrado!", 1);
+            header("Location:?action=Empreendimento.preparaLista");
+            exit;
+        }
+        $oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['id']])[0];
+
+        
  		
  		$_REQUEST['voUnidade'] = $this->recuperar("Unidade");
  		
@@ -13,6 +22,15 @@
  	}
  
      public function preparaFormulario(){
+
+        if(!isset($_REQUEST['idEmpreendimento']) || (isset($_REQUEST['idEmpreendimento']) && empty($_REQUEST['idEmpreendimento']))){
+            setMessage("Id do empreendimento não encontrado!", 1);
+            header("Location:?action=Empreendimento.preparaLista");
+            exit;
+        }
+
+        $oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['idEmpreendimento']])[0];
+         
          $oUnidade = false;
  
          if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){

@@ -39,50 +39,84 @@
  						<h2 class="card-title"><?php echo $sOP; ?> Empreendimento </h2>
  						<!--<p class="card-subtitle"> Validation summary will display an error list above the form. </p>-->
  					</header>
- 					<div class="card-body">
- 						
-										<input type='hidden' name='fId' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getId() : ""; ?>'/>
-										<div class="row form-group">
+ 					<div class="card-body"> 						
+							<input type='hidden' name='fId' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getId() : ""; ?>'/>
+							<div class="row form-group">
 
-											<div class="col-lg-7">
-												<label class="col-form-label" for="Nome">Nome:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Nome' placeholder='Nome' name='fNome'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getNome() : ""; ?>' title="Este campo é obrigatório." />
-											</div>
-										</div>
-										<div class="row form-group">
+								<div class="col-lg-7">
+									<label class="col-form-label" for="Nome">Nome:<span class="required">*</span></label>
+									<input class="form-control" type='text' id='Nome' placeholder='Nome' name='fNome'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getNome() : ""; ?>' title="Este campo é obrigatório." />
+								</div>
+							</div>
+							<div class="row form-group">
 
-											<div class="col-lg-3">
-												<label class="col-form-label" for="Cep">CEP:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='cep' placeholder='CEP' name='fCep'  required   value='<?php echo ($oCliente) ? $oCliente->getCep() : ""; ?>' title="Cep é obrigatório." />
-											</div>
+								<div class="col-lg-3">
+									<label class="col-form-label" for="Cep">CEP:<span class="required">*</span></label>
+									<input class="form-control" type='text' id='cep' placeholder='CEP' name='fCep'  required   value='<?php echo ($oCliente) ? $oCliente->getCep() : ""; ?>' title="Cep é obrigatório." />
+								</div>
 
-											<div class="col-lg-4">
-												<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
-												<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
-													<option value="">Selecione</option>
-													<option value="1">Resort</option>
-													<option value="2">Residencial</option>
-												</select>
-											</div>
-										</div>
-										<div class="row form-group">
-											
-											<div class="col-lg-7">
-												<label class="form-label" for="Endereco">Endereço:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Logradouro' placeholder='Endereco' name='fEndereco'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
-											</div>
-											
-										</div>
-										<div class="row form-group">
+								<div class="col-lg-4">
+									<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
+									<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
+										<option value="">Selecione</option>
+										<option value="1">Resort</option>
+										<option value="2">Residencial</option>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								
+								<div class="col-lg-7">
+									<label class="form-label" for="Endereco">Endereço:<span class="required">*</span></label>
+									<input class="form-control" type='text' id='Logradouro' placeholder='Endereco' name='fEndereco'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
+								</div>
+								
+							</div>
+							<div class="row form-group">
 
-											<div class="col-lg-7">
-												<label class="col-form-label" for="Descricao">Descricao:</label>
-												<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
-											</div>
+								<div class="col-lg-7">
+									<label class="col-form-label" for="Descricao">Descricao:</label>
+									<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao' value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
+								</div>
 
-										</div>
+							</div>
+
+							<div class="row">
+								<div class="col-7">
+									<header class="card-header">
+										<h2 class="card-title">Tipos de Unidades</h2>
+									</header>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-7">
+								<table class="table table-bordered table-striped mb-0" >
+                                        <thead>
+                                            <tr>
+                                               <th width="1%">
+                                                     <a href="javascript: marcarTodosCheckBoxFormulario('Empreendimento')">
+                                                            <i class="icon fa fa-check"></i>
+                                                      </a>
+                                               </th>
+                                               <th>Nome</th>
+                                                <th width="1%">Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+											<tr>
+												<td><input type="hidden" name=""></td>
+												<td><input type="text" class="form-control"></td>
+												<td><a href="#">+</a></td>
+											</tr>
+										</tbody>
+								</table>
+								</div>
+							</div>
  					</div>
-                                     	<footer class="card-footer">
+					
+					
+
+					<footer class="card-footer">
  						<div class="row justify-content-end">
  							<div class="col-sm-9">
  								<button type="button" class="btn btn-default" onclick="history.back(-1)"><i class="fa fa-reply fa-sm" aria-hidden="true"></i> Voltar</button>

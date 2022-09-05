@@ -39,27 +39,27 @@
                                         <thead>
                                             <tr>
                                                <th width="1%">
-                                                     <a href="javascript: marcarTodosCheckBoxFormulario('Empreendimento')"><i class="icon fa fa-check"></i></a>
+                                                     <a href="javascript: marcarTodosCheckBoxFormulario('Empreendimento')">
+                                                            <i class="icon fa fa-check"></i>
+                                                      </a>
                                                </th>
-                                               
-														 <th width="1%">Id</th>
-														 <th>Endereco</th>
-														 <th>Cep</th>
-														 <th>Tipo</th>
-														 <th>Descricao</th>
+                                               <th>Nome</th>
+                                               <th>Endereco</th>
+                                               <th>Cep</th>
+                                                <th>Tipo</th>
+                                                <th>Ações</th>
                                             </tr>
                                         </thead>
                                         <tbody>
  					 <?php foreach($voEmpreendimento as $oEmpreendimento){ ?>                                                  
- 					        <tr>
-                                                    <td><input onClick="JavaScript: atualizaAcoes('Empreendimento')" type="checkbox" value="<?php echo $oEmpreendimento->getId(); ?>" name="fIdEmpreendimento[]" /></td>
-                                                         						
-									 <td><?php echo $oEmpreendimento->getId(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getEndereco(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getCep(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getTipo(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getDescricao(); ?></td>
-                                                 </tr>
+ 					       <tr>
+                                          <td><input onClick="JavaScript: atualizaAcoes('Empreendimento')" type="checkbox" value="<?php echo $oEmpreendimento->getId(); ?>" name="fIdEmpreendimento[]" /></td>                    												
+                                          <td><?php echo $oEmpreendimento->getNome(); ?></td>						
+                                          <td><?php echo $oEmpreendimento->getEndereco(); ?></td>						
+                                          <td><?php echo $oEmpreendimento->getCep(); ?></td>						
+                                          <td><?php echo ($oEmpreendimento->getTipo()==='1')?"Resort":"Residencial"; ?></td>	
+                                          <td><a href="?action=Unidade.preparaLista&id=<?php echo $oEmpreendimento->getId(); ?>">U</a></td>
+                                     </tr>
  					<?php } ?>                                  
  				      </tbody>
                                    </table>
