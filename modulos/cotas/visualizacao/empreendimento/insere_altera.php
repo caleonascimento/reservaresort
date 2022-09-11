@@ -20,7 +20,10 @@
         <script type='text/javascript' src='http://files.rafaelwendel.com/jquery.js'></script>
      </head>
 	 	
- 
+    <style>
+
+	</style>
+	 
      <?php include_once("includes/head-body.php"); ?>
  
  	       <!-- start: page -->
@@ -96,13 +99,15 @@
                                                             <i class="icon fa fa-check"></i>
                                                </th>
                                                <th>Nome</th>
+                                               <th width="80">Lotação</th>
                                                 <th width="1%">Ações</th>
                                             </tr>
                                         </thead>
                                         <tbody id="target">
 											<tr>
 												<td><input type="hidden" id="tUnidade_id" value=""></td>
-												<td><input type="text" class="form-control" id="tUnidade_nome"></td>
+												<td><input type="text" class="form-control" id="tUnidade_nome" placeholder="Ex.:1 ou 2 quartos, suite de luxo.."></td>
+												<td><input maxlength="2" class="form-control" id="tUnidade_lotacao" placeholder="Máx."></td>
 												<td><button type="button" class="btn btn-default" id="btn_addUnidadetipo"><b>Add</b></button></td>
 											</tr>
 <?php 										if(isset($oEmpreendimento) && !empty($oEmpreendimento))
@@ -111,6 +116,7 @@
 ?>														<tr>
 															<td><input type='hidden' name='fId_tipoUnidade[]' value="" /></td>
 															<td><?php echo $oEmpTipoUnidade->getNome();?></td>
+															<td><?php echo $oEmpTipoUnidade->getLotacao();?></td>
 															<td><button type='button' class='btn btn-default remove' id='btn_addUnidadetipo' >Remover</button></td>
 														</tr>
 <?php 												}
@@ -148,6 +154,10 @@
 
 	 $(document).ready(function() {
 		 $("#cep").mask("99.999-999");
+		//  $("#tUnidade_lotacao").mask("99");
+		 $("#tUnidade_lotacao").keyup(function(){
+			$(this).val($(this).val().replace(/[^\d]/g, ""));
+		 });
  
  
 		//Evento de click do botão 'Add'
@@ -158,10 +168,13 @@
 
 			//Adiciona linha ao grid
 			$("#target").append("<tr><td></td><td>" + $("#tUnidade_nome").val() +
-			"<input type='hidden' name='fNome_tipoUnidade[]' value='"+ $("#tUnidade_nome").val() +
-			"' /></td><td><button type='button' class='btn btn-default remove' id='btn_addUnidadetipo' >Remover</button></td></tr>");
+				"<input type='hidden' name='fNome_tipoUnidade[]' value='"+ $("#tUnidade_nome").val() + "' /></td>" +
+				"<td>" + $("#tUnidade_lotacao").val() + "<input type='hidden' name='fLotacao_tipoUnidade[]' value='"+ 
+				$("#tUnidade_lotacao").val() + "' /></td>" +
+				"<td><button type='button' class='btn btn-default remove' id='btn_addUnidadetipo' >Remover</button></td></tr>");
 			//limpa campo
 			$("#tUnidade_nome").val("");
+			$("#tUnidade_lotacao").val("");
 		});
 
 		//Evento de remover linha

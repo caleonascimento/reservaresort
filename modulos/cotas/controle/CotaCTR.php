@@ -14,18 +14,35 @@
  
      public function preparaFormulario(){
          $oCota = false;
- 
-         if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
-              $nIdCota = ($_POST['fIdCota'][0]) ? $_POST['fIdCota'][0] : $_GET['nIdCota'];
-              $oCota = $this->recuperar('Cota', array('id'=>$nIdCota));
+         $location = "?action=Empreendimento.preparaLista";
+
+         try {
+            if(!isset($_REQUEST['idUnidade']) || empty($_REQUEST['idUnidade']))
+                throw new Exception("Id da Unidade não informado ou inválido", 1);
+            if(!$oUnidade = $this->recuperar("Unidade", ['id'=>$_REQUEST['idUnidade']]))
+                throw new Exception("Id da Unidade não informado ou inválido", 1);
+
+            $oUnidade = $oUnidade[0];
+            $nIdUnidade = $_REQUEST['idUnidade'];
+
+            $oEmpreendimento = $oUnidade->getEmpreendimento();
+
+          
+             
+         if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar") {
+             $nIdCota = ($_POST['fIdCota'][0]) ? $_POST['fIdCota'][0] : $_GET['nIdCota'];
+             $oCota = $this->recuperar('Cota', array('id'=>$nIdCota));
          }
- 
-         $_REQUEST['oCota'] = (@$_SESSION['oCota']) ? $_SESSION['oCota'][0] : $oCota[0];
-         unset($_SESSION['oCota']);
- 
-         $_REQUEST['voUnidade'] = $this->recuperar("Unidade", array());
-		$_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
-		
+
+
+            $_REQUEST['oCota'] = (@$_SESSION['oCota']) ? $_SESSION['oCota'][0] : $oCota[0];
+            unset($_SESSION['oCota']);
+    
+            $_REQUEST['voUnidade'] = $this->recuperar("Unidade", array());
+
+            $_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");
@@ -33,6 +50,12 @@
              include_once($this->_PATHVIEW . "/insere_altera.php");
  
          exit();
+                
+         } catch (Exception $e) {
+            //throw $th;
+         }
+
+         
  
      }
  

@@ -4,53 +4,126 @@
  	private $_PATHVIEW = "modulos/cotas/visualizacao/unidade";
  
  	public function preparaLista(){
+        $location = "?action=Empreendimento.preparaLista";
+        try {
+            if(!isset($_REQUEST['id']) || (isset($_REQUEST['id']) && empty($_REQUEST['id'])))
+                throw new Exception("Id do empreendimento inválido!", 1);
+            if(!$oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['id']]))
+                throw new Exception("Empreendimento inválido ou não encontrado!", 1);
 
-        if(!isset($_REQUEST['id']) || (isset($_REQUEST['id']) && empty($_REQUEST['id']))){
-            setMessage("Id do empreendimento não encontrado!", 1);
-            header("Location:?action=Empreendimento.preparaLista");
+            $oEmpreedimento = $oEmpreedimento[0];
+
+    
+    
+            $_REQUEST['voUnidade'] = $this->recuperar("Unidade");
+            
+            include_once($this->_PATHVIEW . "/index.php");
+            exit();
+                
+        } catch (Exception $e) {
+            setMessage($e->getMessage(), 1);
+            header("Location:".$location);
             exit;
         }
-        $oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['id']])[0];
+
+        // if(!isset($_REQUEST['id']) || (isset($_REQUEST['id']) && empty($_REQUEST['id']))){
+        //     setMessage("Id do empreendimento inválido!", 1);
+        //     header("Location:?action=Empreendimento.preparaLista");
+        //     exit;
+        // }
+        // if(!$oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['id']])) {
+        //     setMessage("Id do empreendimento inválido!", 1);
+        //     header("Location:?action=Empreendimento.preparaLista");
+        //     exit;
+        // }
+        // $oEmpreedimento = $oEmpreedimento[0];
 
         
  		
- 		$_REQUEST['voUnidade'] = $this->recuperar("Unidade");
+ 		// $_REQUEST['voUnidade'] = $this->recuperar("Unidade");
  		
- 		include_once($this->_PATHVIEW . "/index.php");
- 		exit();
+ 		// include_once($this->_PATHVIEW . "/index.php");
+ 		// exit();
  	
  	}
  
      public function preparaFormulario(){
+        $location = "?action=Empreendimento.preparaLista";
 
-        if(!isset($_REQUEST['idEmpreendimento']) || (isset($_REQUEST['idEmpreendimento']) && empty($_REQUEST['idEmpreendimento']))){
-            setMessage("Id do empreendimento não encontrado!", 1);
-            header("Location:?action=Empreendimento.preparaLista");
+        try {
+            if(!isset($_REQUEST['idEmpreendimento']) || (isset($_REQUEST['idEmpreendimento']) && empty($_REQUEST['idEmpreendimento'])))
+                throw new Exception("Id do empreendimento inválido!", 1);
+            if(!$oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['idEmpreendimento']]))
+                throw new Exception("Id do empreendimento inválido!", 1);
+                
+            $oEmpreedimento = $oEmpreedimento[0];
+            $idEmpreendimento = $_REQUEST['idEmpreendimento'];
+
+            //Pega os tipos de unidades do empreendimento
+            $voTipoUnidades = $oEmpreedimento->getTipoUnidades();
+            
+            $oUnidade = false;
+
+            if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
+                $nIdUnidade = ($_POST['fIdUnidade'][0]) ? $_POST['fIdUnidade'][0] : $_GET['nIdUnidade'];
+                if(!$oUnidade = $this->recuperar('Unidade', array('id'=>$nIdUnidade)))
+                    throw new Exception("Id da unidade inválido!", 1);             
+            }
+
+            $_REQUEST['oUnidade'] = (@$_SESSION['oUnidade']) ? $_SESSION['oUnidade'] : $oUnidade;
+            unset($_SESSION['oUnidade']);
+   
+           
+            if($_REQUEST['sOP'] == "Detalhar")
+                include_once($this->_PATHVIEW . "/detalhe.php");
+            else
+                include_once($this->_PATHVIEW . "/insere_altera.php");
+    
+            exit();
+
+        //Tratamento de erros         
+        } catch(Exception $e) {
+            setMessage($e->getMessage(), 1);
+            header("Location:".$location);
             exit;
         }
 
-        $oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$_REQUEST['idEmpreendimento']])[0];
+        // if(!isset($_REQUEST['idEmpreendimento']) || (isset($_REQUEST['idEmpreendimento']) && empty($_REQUEST['idEmpreendimento']))){
+        //     setMessage("Id do empreendimento não encontrado!", 1);
+        //     header("Location:?action=Empreendimento.preparaLista");
+        //     exit;
+        // }
+        // $idEmpreendimento = $_REQUEST['idEmpreendimento'];
+        // $oEmpreedimento = $this->recuperar("Empreendimento", ['id'=>$idEmpreendimento])[0];
+        // if (!$oEmpreedimento) {
+        //      setMessage("Empreendimento não encontrado!", 1);
+        //      header("Location:?action=Empreendimento.preparaLista");
+        //      exit;
+        // }
+
+        //Pega os tipos de unidades do empreendimento
+        // $voTipoUnidades = $oEmpreedimento->getTipoUnidades();
          
-         $oUnidade = false;
+        //  $oUnidade = false;
  
-         if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
-              $nIdUnidade = ($_POST['fIdUnidade'][0]) ? $_POST['fIdUnidade'][0] : $_GET['nIdUnidade'];
-              $oUnidade = $this->recuperar('Unidade', array('id'=>$nIdUnidade));
-         }
- 
-         $_REQUEST['oUnidade'] = (@$_SESSION['oUnidade']) ? $_SESSION['oUnidade'][0] : $oUnidade[0];
-         unset($_SESSION['oUnidade']);
- 
-         $_REQUEST['voEmpreendimento'] = $this->recuperar("Empreendimento", array());
+        //  if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
+        //       $nIdUnidade = ($_POST['fIdUnidade'][0]) ? $_POST['fIdUnidade'][0] : $_GET['nIdUnidade'];
+        //       if(!$oUnidade = $this->recuperar('Unidade', array('id'=>$nIdUnidade)))
+
+              
+        //  }
+
+        //  $_REQUEST['oUnidade'] = (@$_SESSION['oUnidade']) ? $_SESSION['oUnidade'] : $oUnidade;
+        //  unset($_SESSION['oUnidade']);
 
 		
  
-         if($_REQUEST['sOP'] == "Detalhar")
-             include_once($this->_PATHVIEW . "/detalhe.php");
-         else
-             include_once($this->_PATHVIEW . "/insere_altera.php");
+        //  if($_REQUEST['sOP'] == "Detalhar")
+        //      include_once($this->_PATHVIEW . "/detalhe.php");
+        //  else
+        //      include_once($this->_PATHVIEW . "/insere_altera.php");
  
-         exit();
+        //  exit();
  
      }
  
@@ -62,9 +135,8 @@
             $oUnidade = new Unidade();
              	
 			$oUnidade->setId($_POST['fId']);
-			$oUnidade->setTipo($_POST['fTipo']);
+			$oUnidade->setIdTipoUnidade($_POST['fIdTipoUnidade']);
 			$oUnidade->setDescricao($_POST['fDescricao']);
-			$oUnidade->setLotacao($_POST['fLotacao']);
 			$oUnidade->setIdEmpreendimento($_POST['fIdEmpreendimento']);
  
              $_SESSION['oUnidade'] = $oUnidade;
@@ -90,8 +162,8 @@
              case "Cadastrar":
                  if($this->inserir($oUnidade)) {
                      unset($_SESSION['oUnidade']);
-                     setMessage("unidade inserido com sucesso!", 2);
-                     $sHeader = "?action=Unidade.preparaLista";
+                     setMessage("Unidade cadastrada com sucesso!", 2);
+                     $sHeader = "?action=Unidade.preparaLista&id=".$oUnidade->getIdEmpreendimento();
  
                  } else {
                      setMessage("Não foi possível inserir o unidade!", 1);

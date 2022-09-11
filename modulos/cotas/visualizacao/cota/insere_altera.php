@@ -31,20 +31,25 @@
  							<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
  						</div>
  						<h2 class="card-title"><?php echo $sOP; ?> cota </h2>
+						<hr>
+						 <h3><?php echo $oEmpreendimento->getNome();?></h3>
+						 <h3 class="card-subtitle">Unidade: <?php echo $oUnidade->getDescricao();?></h3>
  						<!--<p class="card-subtitle"> Validation summary will display an error list above the form. </p>-->
  					</header>
  					<div class="card-body">
  						
 										<input type='hidden' name='fId' value='<?php echo ($oCota) ? $oCota->getId() : ""; ?>'/>
+										<input type='hidden' name='fIdUnidade' value='<?php echo $nIdUnidade; ?>'/>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="Numero">Numero:<span class="required">*</span></label>
-												<input class="form-control" type='text' id='Numero' placeholder='Numero' name='fNumero'  required   value='<?php echo ($oCota) ? $oCota->getNumero() : ""; ?>' title="Este campo é obrigatório." />
+												<label class="col-form-label" for="Numero">Número da cota:<span class="required">*</span></label>
+												<input class="form-control" type='text' id='Numero' placeholder='Número da cota' name='fNumero' required   
+												value='<?php echo ($oCota) ? $oCota->getNumero() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
 										</div>
 										<div class="row form-group">
 											<div class="col-lg-4">
-												<label class="col-form-label" for="Usuario">Id_usuario:<span class="required">*</span></label>
+												<label class="col-form-label" for="Usuario">Usuário cotista:<span class="required">*</span></label>
 												<select name='fIdUsuario' data-plugin-selectTwo class="form-control populate"  required  title="Este campo é obrigatório." >
 													<option value=''>Selecione</option>
 <?php													 $sSelected = "";
@@ -52,26 +57,12 @@
 														foreach($voUsuario as $oUsuario) {
 															if($oCota) 
 																$sSelected = ($oCota->getIdUsuario() == $oUsuario->getId()) ? "selected" : "";
-?>															<option  <?php echo $sSelected; ?> value='<?php echo $oUsuario->getId(); ?>'><?php echo $oUsuario->getId(); ?></option>
+?>															<option  <?php echo $sSelected; ?> value='<?php echo $oUsuario->getId(); ?>'><?php echo $oUsuario->getNome(); ?></option>
 <?php														}
 ?>												</select>
 											</div>
 										</div>
-										<div class="row form-group">
-											<div class="col-lg-4">
-												<label class="col-form-label" for="Unidade">Id_unidade:<span class="required">*</span></label>
-												<select name='fIdUnidade' data-plugin-selectTwo class="form-control populate"  required  title="Este campo é obrigatório." >
-													<option value=''>Selecione</option>
-<?php													 $sSelected = "";
-													if($voUnidade) 
-														foreach($voUnidade as $oUnidade) {
-															if($oCota) 
-																$sSelected = ($oCota->getIdUnidade() == $oUnidade->getId()) ? "selected" : "";
-?>															<option  <?php echo $sSelected; ?> value='<?php echo $oUnidade->getId(); ?>'><?php echo $oUnidade->getId(); ?></option>
-<?php														}
-?>												</select>
-											</div>
-										</div>
+										
  					</div>
                                      	<footer class="card-footer">
  						<div class="row justify-content-end">

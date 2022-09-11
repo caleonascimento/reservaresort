@@ -61,10 +61,11 @@
                  if($id = $this->inserir($oEmpreendimento)) {
                     //Insere Tipo de Unidade do Empreendimento
                     if(isset($_POST['fNome_tipoUnidade']) && !empty($_POST['fNome_tipoUnidade'])) 
-                        foreach ($_POST['fNome_tipoUnidade'] as $value) {
+                        foreach ($_POST['fNome_tipoUnidade'] as $i=>$value) {
                            $oEmpreendimentoTipoUnidade = new EmpreendimentoTipoUnidade();
                            $oEmpreendimentoTipoUnidade->setIdEmpreendimento($id); 
                            $oEmpreendimentoTipoUnidade->setNome($value); 
+                           $oEmpreendimentoTipoUnidade->setLotacao($_POST['fLotacao_tipoUnidade'][$i]); 
                            //var_dump($oEmpreendimentoTipoUnidade);
                            $this->inserir($oEmpreendimentoTipoUnidade);
                         }

@@ -37,44 +37,30 @@
  					<div class="card-body">
  						
 						<input type='hidden' name='fId' value='<?php echo ($oUnidade) ? $oUnidade->getId() : ""; ?>'/>
-						<input type='hidden' name='fIdEmpreendimento' 
-								value='<?php echo ($oUnidade && $oUnidade->getEmpreendimento()) ? $oUnidade->getEmpreendimento()->getId() : ""; ?>'/>
+						<input type='hidden' name='fIdEmpreendimento' value='<?php echo $idEmpreendimento;?>'/>
 						<div class="row form-group">
 							<div class="col-lg-4">
-								<label class="col-form-label" for="Tipo">Tipo:<span class="required">*</span></label>
-								<input class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required 
-										value='<?php echo ($oUnidade) ? $oUnidade->getTipo() : ""; ?>' title="Este campo é obrigatório." />
-							</div>
+								<label class="col-form-label" for="IdTipoUnidade">Tipo:<span class="required">*</span></label>
+
+								<select name='fIdTipoUnidade' data-plugin-selectTwo class="form-control populate" required title="Este campo é obrigatório." id="IdTipoUnidade">
+									<option value=''>Selecione</option>
+<?php 								foreach ($voTipoUnidades as $oTipoUnidade) {
+?>										<option value='<?php echo $oTipoUnidade->getId();?>'><?php echo $oTipoUnidade->getNome();?></option>
+<?php	 							}  
+?>							    </select>
+ 						    </div>
 						</div>
+
 						<div class="row form-group">
 							<div class="col-lg-4">
-								<label class="col-form-label" for="Descricao">Descricao:<span class="required">*</span></label>
-								<input class="form-control" type='text' id='Descricao' placeholder='Descricao' name='fDescricao'  
+								<label class="col-form-label" for="Descricao">Descricao ou número da unidade:<span class="required">*</span></label>
+								<input class="form-control" type='text' id='Descricao' placeholder='Ex.: Bloco B, 304' name='fDescricao'  
 									required   value='<?php echo ($oUnidade) ? $oUnidade->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
 							</div>
 						</div>
-						<div class="row form-group">
-							<div class="col-lg-4">
-								<label class="col-form-label" for="Lotacao">Lotacao:<span class="required">*</span></label>
-								<input class="form-control" type='text' id='Lotacao' placeholder='Lotacao' name='fLotacao' 
-										required  onKeyPress="TodosNumero(event);" value='<?php echo ($oUnidade) ? $oUnidade->getLotacao() : ""; ?>' title="Este campo é obrigatório." />
-							</div>
-						</div>
-						<div class="row form-group">
-							<div class="col-lg-4">
-								<label class="col-form-label" for="Empreendimento">Id_empreendimento:<span class="required">*</span></label>
-								<select name='fIdEmpreendimento' data-plugin-selectTwo class="form-control populate" required title="Este campo é obrigatório.">
-									<option value=''>Selecione</option>
-<?php							    $sSelected = "";	
-									if($voEmpreendimento) 
-									foreach($voEmpreendimento as $oEmpreendimento) {
-										if($oUnidade) 
-											$sSelected = ($oUnidade->getIdEmpreendimento() == $oEmpreendimento->getId()) ? "selected" : "";
-?>										    <option  <?php echo $sSelected; ?> value='<?php echo $oEmpreendimento->getId(); ?>'><?php echo $oEmpreendimento->getId(); ?></option>
-<?php							    }
-?>							   </select>	
-							</div>
-						</div>
+				
+					
+
  					</div>
 					<footer class="card-footer">
  						<div class="row justify-content-end">

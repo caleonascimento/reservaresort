@@ -29,13 +29,21 @@
 	* @auto-increment false
 	*/
 	private $sNome;
+	/**
+	* @campo lotacao
+	* @var number
+	* @primario false
+	* @nulo true
+	* @auto-increment false
+	*/
+	private $nLotacao;
+
 	private $oEmpreendimento;
 	
  	
  	public function __construct(){
  		
  	}
- 	
  	
 	 public function setId($nId) {
 		$this->nId = $nId;
@@ -55,6 +63,13 @@
 	 public function getNome() {
 		return $this->sNome;
 	 }
+	 public function setLotacao($nLotacao) {
+		$this->nLotacao = $nLotacao;
+	 }
+	 public function getLotacao() {
+		return $this->nLotacao;
+	 }
+
 	public function setEmpreendimento($oEmpreendimento) {
 		$this->oEmpreendimento = $oEmpreendimento;
 	}

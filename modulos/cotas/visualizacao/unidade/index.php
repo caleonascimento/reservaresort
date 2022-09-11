@@ -43,11 +43,11 @@
                                                      <a href="javascript: marcarTodosCheckBoxFormulario('Unidade')"><i class="icon fa fa-check"></i></a>
                                                </th>
                                                
-														 <th width="1%">Id</th>
-														 <th>Tipo</th>
-														 <th>Descricao</th>
-														 <th>Lotacao</th>
-														 <th>IdEmpreendimento</th>
+                                                <th width="1%">Id</th>
+                                                <th>Tipo</th>
+                                                <th>Descricao ou número</th>
+                                                <th>Lotação</th>
+                                                <th>Ação</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -56,10 +56,10 @@
                                                     <td><input onClick="JavaScript: atualizaAcoes('Unidade')" type="checkbox" value="<?php echo $oUnidade->getId(); ?>" name="fIdUnidade[]" /></td>
                                                          						
 									 <td><?php echo $oUnidade->getId(); ?></td>						
-									 <td><?php echo $oUnidade->getTipo(); ?></td>						
+									 <td><?php echo $oUnidade->getTipoUnidade()->getNome(); ?></td>						
 									 <td><?php echo $oUnidade->getDescricao(); ?></td>						
-									 <td><?php echo $oUnidade->getLotacao(); ?></td>						
-									 <td><?php echo $oUnidade->getIdEmpreendimento(); ?></td>
+									 <td><?php echo $oUnidade->getTipoUnidade()->getLotacao(); ?> Pessoas</td>
+                                                       <td><a href="?action=Cota.preparaLista&id=<?php echo $oUnidade->getId();?>">Cotas</a></td>
                                                  </tr>
  					<?php } ?>                                  
  				      </tbody>

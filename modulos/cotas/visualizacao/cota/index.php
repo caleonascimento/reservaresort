@@ -28,7 +28,7 @@
      			 <div class='form-group col-md-3 select-acoes'>
      				 <select class="form-control Acoes" name="acoes" id="acoesCota" onChange="JavaScript: submeteForm('Cota')">
      					<option value="" selected>Ações...</option>
-     					<option value="?action=Cota.preparaFormulario&sOP=Cadastrar" lang="0">Cadastrar novo cota</option>
+     					<option value="?action=Cota.preparaFormulario&sOP=Cadastrar&idUnidade=<?php echo $_REQUEST['id'];?>" lang="0">Cadastrar novo cota</option>
      					<option value="?action=Cota.preparaFormulario&sOP=Alterar" lang="1">Alterar cota selecionado</option>
      					<option value="?action=Cota.preparaFormulario&sOP=Detalhar" lang="1">Detalhar cota selecionado</option>
      					<option value="?action=Cota.processaFormulario&sOP=Excluir" lang="2">Excluir cota(s) selecionado(s)</option>

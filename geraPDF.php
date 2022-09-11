@@ -76,7 +76,7 @@ $pdf->SetFont('Times','',12);
 
 $pdf->cell(0,10,utf8_decode("CARTA DE AUTORIZAÇÃO PARA UTILIZAÇÃO DE TERCEIROS"), 1, 1, 'C');
 $pdf->Ln();
-$pdf->MultiCell(0,8, utf8_decode($sMainText), 1);
+$pdf->MultiCell(0,7, utf8_decode($sMainText), 1);
 $pdf->Ln();
 $pdf->MultiCell(0,5, utf8_decode($sTermoAceite), 1);
 $pdf->Ln();

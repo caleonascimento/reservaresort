@@ -4,23 +4,31 @@
   * @SGBD mysql 
   * @tabela unidade 
   */
- class Unidade{
- 	/**
-	* @campo id
-	* @var number
-	* @primario true
-	* @nulo false
-	* @auto-increment true
-	*/
+  class Unidade{
+	/**
+	 * @campo id
+	 * @var number
+	 * @primario true
+	 * @nulo false
+	 * @auto-increment true
+	 */
 	private $nId;
 	/**
-	* @campo tipo
-	* @var String
+	 * @campo id_empreendimento
+	* @var number
 	* @primario false
 	* @nulo false
 	* @auto-increment false
 	*/
-	private $sTipo;
+	private $nIdEmpreendimento;
+	/**
+	* @campo id_tipo_unidade
+	* @var number
+	* @primario false
+	* @nulo true
+	* @auto-increment false
+	*/
+	private $nIdTipoUnidade;
 	/**
 	* @campo descricao
 	* @var String
@@ -29,23 +37,10 @@
 	* @auto-increment false
 	*/
 	private $sDescricao;
-	/**
-	* @campo lotacao
-	* @var number
-	* @primario false
-	* @nulo false
-	* @auto-increment false
-	*/
-	private $nLotacao;
-	/**
-	* @campo id_empreendimento
-	* @var number
-	* @primario false
-	* @nulo false
-	* @auto-increment false
-	*/
-	private $nIdEmpreendimento;
+
+
 	private $oEmpreendimento;
+	private $oTipoUnidade;
 	
  	
  	public function __construct(){
@@ -59,23 +54,17 @@
 	 public function getId() {
 		return $this->nId;
 	 }
-	 public function setTipo($sTipo) {
-		$this->sTipo = $sTipo;
+	 public function setIdTipoUnidade($nIdTipoUnidade) {
+		$this->nIdTipoUnidade = $nIdTipoUnidade;
 	 }
-	 public function getTipo() {
-		return $this->sTipo;
+	 public function getIdTipoUnidade() {
+		return $this->nIdTipoUnidade;
 	 }
 	 public function setDescricao($sDescricao) {
 		$this->sDescricao = $sDescricao;
 	 }
 	 public function getDescricao() {
 		return $this->sDescricao;
-	 }
-	 public function setLotacao($nLotacao) {
-		$this->nLotacao = $nLotacao;
-	 }
-	 public function getLotacao() {
-		return $this->nLotacao;
 	 }
 	 public function setIdEmpreendimento($nIdEmpreendimento) {
 		$this->nIdEmpreendimento = $nIdEmpreendimento;
@@ -87,10 +76,29 @@
 		$this->oEmpreendimento = $oEmpreendimento;
 	}
 	public function getEmpreendimento() {
+		if($this->oEmpreendimento)
+			return $this->oEmpreendimento;
+
 		$oController = new Controller();
-		if($this->oEmpreendimento = $oController->recuperar('Empreendimento', array('id_empreendimento'=>$this->getIdEmpreendimento())))
+		if($this->oEmpreendimento = $oController->recuperar('Empreendimento', array('id'=>$this->nIdEmpreendimento)))
 				return $this->oEmpreendimento[0];
 		return false;
+	}
+
+	public function getTipoUnidade() {
+		if(!$this->nIdTipoUnidade)
+			return false;
+
+		if($this->oTipoUnidade)	
+			return $this->oTipoUnidade;
+
+		$Controller = new Controller();
+		if(!$this->oTipoUnidade = $Controller->recuperar("EmpreendimentoTipoUnidade", ['id'=>$this->nIdTipoUnidade]))
+			return false;
+		
+		$this->oTipoUnidade = $this->oTipoUnidade[0];
+
+		return $this->oTipoUnidade;
 	}
  }
  ?>
