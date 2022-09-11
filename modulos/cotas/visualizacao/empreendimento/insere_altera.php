@@ -1,7 +1,7 @@
 ﻿<?php
  $sOP = $_REQUEST['sOP'];
  $oEmpreendimento = $_REQUEST['oEmpreendimento'];
- #GET_VETOR_OBJETOS#
+
  
  ?>
  <!doctype html>
@@ -18,7 +18,6 @@
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type='text/javascript' src='http://files.rafaelwendel.com/jquery.js'></script>
-        <script type='text/javascript' src='cep.js'></script>
      </head>
 	 	
  
@@ -52,15 +51,15 @@
 
 								<div class="col-lg-3">
 									<label class="col-form-label" for="Cep">CEP:<span class="required">*</span></label>
-									<input class="form-control" type='text' id='cep' placeholder='CEP' name='fCep'  required   value='<?php echo ($oCliente) ? $oCliente->getCep() : ""; ?>' title="Cep é obrigatório." />
+									<input class="form-control" type='text' id='cep' placeholder='CEP' name='fCep'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getCep() : ""; ?>' title="Cep é obrigatório." />
 								</div>
 
 								<div class="col-lg-4">
 									<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
-									<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />
+									<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo' required title="Este campo é obrigatório.">
 										<option value="">Selecione</option>
-										<option value="1">Resort</option>
-										<option value="2">Residencial</option>
+										<option value="1" <?php echo ($oEmpreendimento) ? (($oEmpreendimento->getTipo()=='1')?"selected":'') : ''; ?>>Resort</option>
+										<option value="2" <?php echo ($oEmpreendimento) ? (($oEmpreendimento->getTipo()=='2')?"selected":'') : ''; ?>>Residencial</option>
 									</select>
 								</div>
 							</div>
@@ -68,7 +67,7 @@
 								
 								<div class="col-lg-7">
 									<label class="form-label" for="Endereco">Endereço:<span class="required">*</span></label>
-									<input class="form-control" type='text' id='Logradouro' placeholder='Endereco' name='fEndereco'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
+									<input class="form-control" type='text' id='Logradouro' placeholder='Endereco' name='fEndereco' required value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getEndereco() : ""; ?>' title="Este campo é obrigatório." />
 								</div>
 								
 							</div>
@@ -92,23 +91,33 @@
 								<div class="col-7">
 								<table class="table table-bordered table-striped mb-0" >
                                         <thead>
-                                            <tr>
+                                            <tr class="bg-primary text-light" style="">
                                                <th width="1%">
-                                                     <a href="javascript: marcarTodosCheckBoxFormulario('Empreendimento')">
                                                             <i class="icon fa fa-check"></i>
-                                                      </a>
                                                </th>
                                                <th>Nome</th>
                                                 <th width="1%">Ações</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="target">
 											<tr>
-												<td><input type="hidden" name=""></td>
-												<td><input type="text" class="form-control"></td>
-												<td><a href="#">+</a></td>
+												<td><input type="hidden" id="tUnidade_id" value=""></td>
+												<td><input type="text" class="form-control" id="tUnidade_nome"></td>
+												<td><button type="button" class="btn btn-default" id="btn_addUnidadetipo"><b>Add</b></button></td>
 											</tr>
-										</tbody>
+<?php 										if(isset($oEmpreendimento) && !empty($oEmpreendimento))
+												if(!empty($voTipoUnidades) && count($voTipoUnidades))
+											    	foreach ($voTipoUnidades as $oEmpTipoUnidade) {
+?>														<tr>
+															<td><input type='hidden' name='fId_tipoUnidade[]' value="" /></td>
+															<td><?php echo $oEmpTipoUnidade->getNome();?></td>
+															<td><button type='button' class='btn btn-default remove' id='btn_addUnidadetipo' >Remover</button></td>
+														</tr>
+<?php 												}
+?>										</tbody>
+										<tfoot>
+											
+										</tfoot>
 								</table>
 								</div>
 							</div>
@@ -141,6 +150,25 @@
 		 $("#cep").mask("99.999-999");
  
  
+		//Evento de click do botão 'Add'
+		$("#btn_addUnidadetipo").click(function(){
+			//valida campo
+			if($("#tUnidade_nome").val() == "" || $("#tUnidade_nome").val() == " ")
+				return false
+
+			//Adiciona linha ao grid
+			$("#target").append("<tr><td></td><td>" + $("#tUnidade_nome").val() +
+			"<input type='hidden' name='fNome_tipoUnidade[]' value='"+ $("#tUnidade_nome").val() +
+			"' /></td><td><button type='button' class='btn btn-default remove' id='btn_addUnidadetipo' >Remover</button></td></tr>");
+			//limpa campo
+			$("#tUnidade_nome").val("");
+		});
+
+		//Evento de remover linha
+		$(document).on("click", '.remove', function(){
+			$(this).parent().parent().remove();
+		});
+
 		 function limpa_formulário_cep() {
 			 // Limpa valores do formulário de cep.
 			 $("#Logradouro").val("");

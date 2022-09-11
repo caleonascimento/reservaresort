@@ -12,7 +12,6 @@
 
     <?php include_once("includes/head-body.php"); ?>
 
-                            <?php if ($bPermissaoAcessoGrupo || $bPermissaoAcessoModuloTransacao || $bPermissaoAcessoGrupoPermissao || $bPermissaoAcessoUsuario) { ?>
                                 <div class="col-xl-3 col-xs-12 mt-5">
                                     <section class="card mb-4">
                                         <div class="card-body bg-primary">
@@ -25,19 +24,18 @@
                                                 <div class="widget-summary-col">
                                                     <div class="summary">
                                                         <div class="info">
-                                                            <strong class="amount">ACESSO</strong>
+                                                            <strong class="amount">PDF</strong>
                                                         </div>
-                                                        <h4 class="title">Permissões de Acesso do Usuário</h4>
+                                                        <h4 class="title">Geração de PDF</h4>
                                                     </div>
                                                     <div class="summary-footer">
-                                                        <a href="?action=AcessoGrupo.preparaLista" class="text-uppercase">ENTRAR</a>
+                                                        <a href="geraPDF.php" target="_blank" class="text-uppercase">GERAR</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
-                            <?php } ?>
                 
     <?php include_once("includes/foot-body.php"); ?>
     

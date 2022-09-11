@@ -96,5 +96,16 @@
 	 public function getDescricao() {
 		return $this->sDescricao;
 	 }
+
+	 //Puxa o relacionamento com a tabela de tipos de unidades
+	 public function getTipoUnidades()  {
+		$result = null;
+		if($this->nId) {
+			$controller = new Controller();
+			$result = $controller->recuperar("EmpreendimentoTipoUnidade", ['id_empreendimento'=>$this->nId]);
+		}
+		return $result;
+	 }
+
  }
  ?>

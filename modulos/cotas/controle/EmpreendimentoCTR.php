@@ -12,13 +12,14 @@
  	
  	}
  
-     public function preparaFormulario(){
+     public function preparaFormulario() {
          $oEmpreendimento = false;
         
         
          if($_REQUEST['sOP'] == "Alterar" || $_REQUEST['sOP'] == "Detalhar"){
               $nIdEmpreendimento = ($_POST['fIdEmpreendimento'][0]) ? $_POST['fIdEmpreendimento'][0] : $_GET['nIdEmpreendimento'];
               $oEmpreendimento = $this->recuperar('Empreendimento', array('id'=>$nIdEmpreendimento));
+              $voTipoUnidades = $oEmpreendimento[0]->getTipoUnidades();
          }
  
          $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
@@ -37,6 +38,8 @@
  
  
      public function processaFormulario(){
+
+      
          $sOP = (array_key_exists('sOP',$_POST)) ? $_POST['sOP'] : $_GET['sOP'];
  
          if($sOP != "Excluir"){
@@ -51,27 +54,21 @@
  
              $_SESSION['oEmpreendimento'] = $oEmpreendimento;
  
-             $oValidate = FabricaUtilitario::getUtilitario("Validate");
-             $oValidate->check_4html = true;
- 
-             //$oValidate->add_text_field("Endereco", $oEmpreendimento->getEndereco(), "text", "y");
-			//$oValidate->add_text_field("Cep", $oEmpreendimento->getCep(), "text", "y");
-			//$oValidate->add_number_field("Tipo", $oEmpreendimento->getTipo(), "number", "y");
-			//$oValidate->add_text_field("Descricao", $oEmpreendimento->getDescricao(), "text", "y");
-
- 
-             if (!$oValidate->validation()) {
-                 setMessage($oValidate->create_msg(), 1);
-                 $sHeader = "?action=Empreendimento.preparaFormulario&sOP=".$sOP."&nIdEmpreendimento=".$_POST['fId']."";
-                 header("Location: ".$sHeader);
-                 die();
-             }
          }
  
          switch($sOP){
              case "Cadastrar":
-               
-                 if($this->inserir($oEmpreendimento)) {
+                 if($id = $this->inserir($oEmpreendimento)) {
+                    //Insere Tipo de Unidade do Empreendimento
+                    if(isset($_POST['fNome_tipoUnidade']) && !empty($_POST['fNome_tipoUnidade'])) 
+                        foreach ($_POST['fNome_tipoUnidade'] as $value) {
+                           $oEmpreendimentoTipoUnidade = new EmpreendimentoTipoUnidade();
+                           $oEmpreendimentoTipoUnidade->setIdEmpreendimento($id); 
+                           $oEmpreendimentoTipoUnidade->setNome($value); 
+                           //var_dump($oEmpreendimentoTipoUnidade);
+                           $this->inserir($oEmpreendimentoTipoUnidade);
+                        }
+                       
                      unset($_SESSION['oEmpreendimento']);
                      setMessage("empreendimento inserido com sucesso!", 2);
                      $sHeader = "?action=Empreendimento.preparaLista";

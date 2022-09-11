@@ -129,7 +129,8 @@ class BancoDeDados {
                             }
                         }
                         $sSql = "INSERT INTO $sTabela ($sCampos $sCampoArquivo) VALUES ($sComplemento $sArquivo)";
-                        //echo $sSql . "<br>"; die();
+                    
+     //echo $sSql . "<br>"; die();
                         /*if($this->oPDO->query($sSql))
                             $result = $this->oPDO->lastInsertId();*/
 

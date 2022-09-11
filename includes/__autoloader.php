@@ -56,7 +56,7 @@ spl_autoload_register(function ($sClasse) {
 
      } catch(Exception $e) {
          //Tratar o erro aqui
-         var_dump($e->getMessage()); die();
+         var_dump($e->getMessage()); die("Erro ao incluir Classe!");
     }
 
 });
