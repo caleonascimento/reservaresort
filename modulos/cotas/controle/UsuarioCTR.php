@@ -40,6 +40,7 @@
      public function processaFormulario(){
          $sOP = (array_key_exists('sOP',$_POST)) ? $_POST['sOP'] : $_GET['sOP'];
  
+         
          if($sOP != "Excluir"){
             $oUsuario = new Usuario();
              	
@@ -51,7 +52,7 @@
 			$oUsuario->setCep($_POST['fCep']);
 			$oUsuario->setFone($_POST['fFone']);
 			$oUsuario->setEmail($_POST['fEmail']);
-			// $oUsuario->setDataNascBanco($_POST['fDataNasc']);
+			 $oUsuario->setDataNascBanco($_POST['fDataNasc']);
 			$oUsuario->setTipo($_POST['fTipo']);
 			$oUsuario->setIdAcessoUsuario($_POST['fIdAcessoUsuario']);
  
@@ -60,16 +61,7 @@
              $oValidate = FabricaUtilitario::getUtilitario("Validate");
              $oValidate->check_4html = true;
  
-             //$oValidate->add_text_field("Nome", $oUsuario->getNome(), "text", "y");
-			//$oValidate->add_text_field("Cpf", $oUsuario->getCpf(), "text", "y");
-			//$oValidate->add_text_field("Rg", $oUsuario->getRg(), "text", "y");
-			//$oValidate->add_text_field("Endereco", $oUsuario->getEndereco(), "text", "y");
-			//$oValidate->add_text_field("Cep", $oUsuario->getCep(), "text", "y");
-			//$oValidate->add_text_field("Fone", $oUsuario->getFone(), "text", "y");
-			//$oValidate->add_text_field("Email", $oUsuario->getEmail(), "text", "y");
-			//$oValidate->add_date_field("DataNasc", $oUsuario->getDataNasc(), "date", "y");
-			//$oValidate->add_number_field("Tipo", $oUsuario->getTipo(), "number", "y");
-			//$oValidate->add_number_field("IdAcessoUsuario", $oUsuario->getIdAcessoUsuario(), "number", "y");
+            // var_dump($_POST, $oUsuario); die;
 
  
              if (!$oValidate->validation()) {
