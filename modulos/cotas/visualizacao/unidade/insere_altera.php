@@ -35,7 +35,6 @@
  						<!--<p class="card-subtitle"> Validation summary will display an error list above the form. </p>-->
  					</header>
  					<div class="card-body">
- 						
 						<input type='hidden' name='fId' value='<?php echo ($oUnidade) ? $oUnidade->getId() : ""; ?>'/>
 						<input type='hidden' name='fIdEmpreendimento' value='<?php echo $idEmpreendimento;?>'/>
 						<div class="row form-group">
@@ -50,7 +49,6 @@
 ?>							    </select>
  						    </div>
 						</div>
-
 						<div class="row form-group">
 							<div class="col-lg-4">
 								<label class="col-form-label" for="Descricao">Descricao ou número da unidade:<span class="required">*</span></label>
@@ -58,9 +56,66 @@
 									required   value='<?php echo ($oUnidade) ? $oUnidade->getDescricao() : ""; ?>' title="Este campo é obrigatório." />
 							</div>
 						</div>
-				
-					
+					   <div class="row">
+							<div class="col-md-10">
+								<section class="card mb-4">
+									<header class="card-header">
+										<h2 class="card-title">Cotas da Unidade</h2>
+									</header>
+									<div class="card-body bg-color-gray-01">
+										<div class="row form-group">
+											<div class="col-lg-3">
+												<label class="col-form-label" for="numero">Número da cota:<span class="required">*</span></label>
+												<input class="form-control" type='text' id='numero' placeholder='Número da cota' name='fNumero' required   
+												value='<?php echo ($oCota) ? $oCota->getNumero() : ""; ?>' title="Este campo é obrigatório." />
+											</div>
+											<div class="col-lg-6">
+												<label class="col-form-label" for="Usuario">Usuário cotista:<span class="required">*</span></label>
+												<select name='fIdUsuario' data-plugin-selectTwo class="form-control populate" required 
+														title="Este campo é obrigatório." id="usuario">
+														<option value=''>Selecione</option>
+<?php													$sSelected = "";
+														if($voUsuario) 
+															foreach($voUsuario as $oUsuario) {
+																if($oCota) 
+																	$sSelected = ($oCota->getIdUsuario() == $oUsuario->getId()) ? "selected" : "";
+?>																<option <?php echo $sSelected; ?> value='<?php echo $oUsuario->getId(); ?>'>
+																				<?php echo $oUsuario->getNome(); ?>
+																</option>
+<?php												   	}
+?>										   	</select>
+											</div>
+											<div class="col-lg-3 mt-31"><button id="add" class="btn btn-dark" type="button">Adicionar</button></div>										
+										</div>
+										<hr>
 
+<div class="row">
+	<div class="col">
+		<section class="card">
+									<div class="card-body">
+										<table class="table table-responsive-md table-striped mb-0">
+											<thead>
+												<tr>
+													<th>Número da cota</th>
+													<th>Usuário cotista</th>
+													<th>Ações</th>
+												</tr>
+											</thead>
+											<tbody id="conteudo">
+												<!-- conteudo inserido dinamicamente -->
+											</tbody>
+										</table>
+									</div>
+								</section>
+	</div>
+</div>
+										
+
+
+									</div>
+								</section>
+							</div>
+					   </div>	
  					</div>
 					<footer class="card-footer">
  						<div class="row justify-content-end">
@@ -73,8 +128,23 @@
  				</section>
  			</form>
  		  </div>
- 	       </div>
+ 	   </div>
  	      <!-- end: page -->
  
    <?php include_once("includes/foot-body.php"); ?>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#add").click(function() {
+				
+				let conteudoHtml = "<tr><td>" + $("#numero").val() + " <input type='hidden' name='fNumCota[]' value='" + 
+										 $("#numero").val() + "' /></td>" + "<td>" + $("#usuario option:selected").text() +
+										 "<input type='hidden' name='fidUsuario[]' value='" + $("#usuario").val() + "'" + 
+										 "</td><td>-</td></tr>";
+
+				$("#conteudo").prepend(conteudoHtml);
+			});
+		});	
+														
+	</script>
   </html>

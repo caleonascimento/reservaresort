@@ -20,9 +20,9 @@
               $nIdEmpreendimento = ($_POST['fIdEmpreendimento'][0]) ? $_POST['fIdEmpreendimento'][0] : $_GET['nIdEmpreendimento'];
               $oEmpreendimento = $this->recuperar('Empreendimento', array('id'=>$nIdEmpreendimento));
               $voTipoUnidades = $oEmpreendimento[0]->getTipoUnidades();
-         }
- 
-         $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
+         } 
+         $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'] : $oEmpreendimento;
+
          unset($_SESSION['oEmpreendimento']);
  
          

@@ -58,7 +58,7 @@
                                           <td><?php echo $oEmpreendimento->getEndereco(); ?></td>						
                                           <td><?php echo $oEmpreendimento->getCep(); ?></td>						
                                           <td><?php echo ($oEmpreendimento->getTipo()==='1')?"Resort":"Residencial"; ?></td>	
-                                          <td><a href="?action=Unidade.preparaLista&id=<?php echo $oEmpreendimento->getId(); ?>">U</a></td>
+                                          <td><a href="?action=Unidade.preparaLista&id=<?php echo $oEmpreendimento->getId(); ?>">Unidades</a></td>
                                      </tr>
  					<?php } ?>                                  
  				      </tbody>

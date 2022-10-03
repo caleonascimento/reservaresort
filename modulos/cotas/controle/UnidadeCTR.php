@@ -72,6 +72,10 @@
 
             $_REQUEST['oUnidade'] = (@$_SESSION['oUnidade']) ? $_SESSION['oUnidade'] : $oUnidade;
             unset($_SESSION['oUnidade']);
+
+            //Recupera todos os usuários cotistas
+            //TODO: falta implementar o filtro na consulta
+            $voUsuario = $this->recuperar("Usuario");
    
            
             if($_REQUEST['sOP'] == "Detalhar")
@@ -160,7 +164,21 @@
  
          switch($sOP){
              case "Cadastrar":
-                 if($this->inserir($oUnidade)) {
+                 if($idUnidade = $this->inserir($oUnidade)) {
+
+                    //TODO: Cadastrar Cotas
+                    //Verifica se foi inserida alguma cota para a unidade
+                    if(isset($_POST['fNumCota']) && count($_POST['fNumCota']) && 
+                        isset($_POST['fidUsuario']) && count($_POST['fidUsuario'])) 
+                        foreach ($_POST['fNumCota'] as $key => $nCota) {
+                            $oCota = new Cota();
+                            $oCota->setNumero($nCota);
+                            $oCota->setIdUsuario($_POST['fidUsuario'][$key]);
+                            $oCota->setIdUnidade($idUnidade);
+                            if(!$this->inserir($oCota))
+                                setMessage("A Cota ".$nCota." não pode ser inserida!", 1);
+                        }
+                        
                      unset($_SESSION['oUnidade']);
                      setMessage("Unidade cadastrada com sucesso!", 2);
                      $sHeader = "?action=Unidade.preparaLista&id=".$oUnidade->getIdEmpreendimento();

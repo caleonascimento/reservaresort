@@ -40,7 +40,9 @@
     
             $_REQUEST['voUnidade'] = $this->recuperar("Unidade", array());
 
-            $_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
+            $voUsuario = $this->recuperar("Usuario", array());
+
+            // var_dump($_REQUEST['voUsuario']); die;
 
 		
  

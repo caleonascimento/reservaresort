@@ -7,8 +7,6 @@
  */
 
 
-define('ROOT_PATH',               "/ModAdminPanel_v1/Sistema/");
-
 /**
  * NOTAS DO BREADCRUMB
  * O breadcrumb é montado automaticamente através do array '$vvBreadcrumb', 
@@ -125,7 +123,7 @@ function searchTree($needle, $haystack) {
 
 //----------------------------------------------------------------------------------------
 //Pega a url atual e formata no mesmo padrão do array ?action=[]&sOP=[] ignorando outros argumentos
-$sCurrentUrl = "?action=".$_GET['action']. ($_REQUEST['sOP']?"&sOP=".$_REQUEST['sOP']:'');
+$sCurrentUrl = "?action=".$_GET['action']. ((isset($_REQUEST['sOP']) && $_REQUEST['sOP'])?"&sOP=".$_REQUEST['sOP']:'');
 $vvPathKeys = searchTree($sCurrentUrl, $vvBreadcrumb['subitens']);
 ?>
 
