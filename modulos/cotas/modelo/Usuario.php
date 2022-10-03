@@ -87,7 +87,7 @@
 	private $nTipo;
 	/**
 	* @campo id_acesso_usuario
-	* @var number
+	* @var String
 	* @primario false
 	* @nulo false
 	* @auto-increment false
@@ -161,13 +161,13 @@
 			 return $oData->format("d/m/Y");
 		}
 	 }
-	 public function setDataNascBanco($dDataNasc=null) {
-		 if($dDataNasc) {
-			 $oData = DateTime::createFromFormat('d/m/Y', $dDataNasc);
-			 $this->dDataNasc = $oData->format('Y-m-d') ;
-		 } else 
-				$this->dDataNasc = date("Y-m-d H:i:s");
-		}
+	//  public function setDataNascBanco($dDataNasc=null) {
+	// 	 if($dDataNasc) {
+	// 		 $oData = DateTime::createFromFormat('d/m/Y', $dDataNasc);
+	// 		 $this->dDataNasc = $oData->format('Y-m-d') ;
+	// 	 } else 
+	// 			$this->dDataNasc = date("Y-m-d H:i:s");
+	// 	}
 	 public function setTipo($nTipo) {
 		$this->nTipo = $nTipo;
 	 }

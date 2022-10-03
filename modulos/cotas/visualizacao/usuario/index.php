@@ -83,8 +83,9 @@
  			 <?php } ?>          
                      </form>
                </div><!-- card-body -->
+			   
           </section><!-- card -->
  
  <?php include_once("includes/view/js_index.php")?>
- <?php include_once("includes/foot-body.php"); ?>
+ <?php include_once("includes/foot-body.php")?>
  </html>
