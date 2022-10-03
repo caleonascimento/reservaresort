@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class ReservaLocadorCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/cotas/visualizacao/reserva_locador";
@@ -24,8 +24,10 @@
          unset($_SESSION['oReservaLocador']);
  
          $_REQUEST['voReservaCota'] = $this->recuperar("ReservaCota", array());
-		$_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
-		
+
+		$_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

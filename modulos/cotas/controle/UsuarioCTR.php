@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class UsuarioCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/cotas/visualizacao/usuario";

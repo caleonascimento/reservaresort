@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class NotificacaoCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/cotas/visualizacao/notificacao";
@@ -24,7 +24,8 @@
          unset($_SESSION['oNotificacao']);
  
          $_REQUEST['voAcessoUsuario'] = $this->recuperar("AcessoUsuario", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

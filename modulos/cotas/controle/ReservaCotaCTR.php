@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class ReservaCotaCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/cotas/visualizacao/reserva_cota";
@@ -24,7 +24,8 @@
          unset($_SESSION['oReservaCota']);
  
          $_REQUEST['voCota'] = $this->recuperar("Cota", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class EmpreendimentoTipoUnidadeCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/empreendimento/visualizacao/empreendimento_tipo_unidade";
@@ -24,7 +24,8 @@
          unset($_SESSION['oEmpreendimentoTipoUnidade']);
  
          $_REQUEST['voEmpreendimento'] = $this->recuperar("Empreendimento", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");

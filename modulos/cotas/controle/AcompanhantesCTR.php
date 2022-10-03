@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class AcompanhantesCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/cotas/visualizacao/acompanhantes";
@@ -24,7 +24,8 @@
          unset($_SESSION['oAcompanhantes']);
  
          $_REQUEST['voReservaLocador'] = $this->recuperar("ReservaLocador", array());
-		
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");
