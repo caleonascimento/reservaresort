@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class AcessoModuloTransacaoCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/acesso/visualizacao/acesso_modulo_transacao";

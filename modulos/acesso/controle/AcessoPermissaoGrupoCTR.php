@@ -1,4 +1,4 @@
-﻿<?php
+<?php
  class AcessoPermissaoGrupoCTR extends Controller implements IControle{
  	
  	private $_PATHVIEW = "modulos/acesso/visualizacao/acesso_permissao_grupo";
