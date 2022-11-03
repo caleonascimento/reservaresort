@@ -31,8 +31,13 @@
   				 <h2 class="card-title">Detalhar</h2>
   				 <p class="card-subtitle"> EMPREENDIMENTO </p>
   			   </header>
-                            <div class="card-body">
-                                 
+		<div class="card-body"> 
+			<div class="col-lg-8">
+				<label id="Nome" class="control-label"><b>Nome:</b></label>
+				<blockquote class="b-thin info">
+					<p><?php echo ($oEmpreendimento) ? $oEmpreendimento->getNome() : ""; ?></p>
+				</blockquote>
+			</div>                               
 			<div class="col-lg-8">
 				<label id="Endereco" class="control-label"><b>Endereco:</b></label>
 				<blockquote class="b-thin info">

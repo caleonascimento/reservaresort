@@ -60,7 +60,7 @@
              $oValidate = FabricaUtilitario::getUtilitario("Validate");
              $oValidate->check_4html = true;
  
-             //$oValidate->add_text_field("Nome", $oUsuario->getNome(), "text", "y");
+            //$oValidate->add_text_field("Nome", $oUsuario->getNome(), "text", "y");
 			//$oValidate->add_text_field("Cpf", $oUsuario->getCpf(), "text", "y");
 			//$oValidate->add_text_field("Rg", $oUsuario->getRg(), "text", "y");
 			//$oValidate->add_text_field("Endereco", $oUsuario->getEndereco(), "text", "y");

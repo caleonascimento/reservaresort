@@ -48,16 +48,12 @@
 												<label class="col-form-label" for="Nome">Nome:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='Nome' placeholder='Nome' name='fNome'  required   value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getNome() : ""; ?>' title="Este campo é obrigatório." />
 											</div>
-
-
 										</div>
 										<div class="row form-group">
-
 											<div class="col-lg-3">
 												<label class="col-form-label" for="Cep">CEP:<span class="required">*</span></label>
 												<input class="form-control" type='text' id='cep' placeholder='CEP' name='fCep'  required   value='<?php echo ($oCliente) ? $oCliente->getCep() : ""; ?>' title="Cep é obrigatório." />
 											</div>
-
 											<div class="col-lg-4">
 												<label class="form-label" for="Tipo">Tipo:<span class="required">*</span></label>
 												<select class="form-control" type='text' id='Tipo' placeholder='Tipo' name='fTipo'  required  onKeyPress="TodosNumero(event);" value='<?php echo ($oEmpreendimento) ? $oEmpreendimento->getTipo() : ""; ?>' title="Este campo é obrigatório." />

@@ -2,7 +2,7 @@
     <section class="body">
         <?php include_once('includes/header.php'); ?>
         
-        <div class="inner-wrapper">
+        <div class="">
             <?php include_once('includes/menu.php'); ?>
             <section role="main" class="content-body text-xs">
                 <header class="page-header">

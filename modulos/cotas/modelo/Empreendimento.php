@@ -56,10 +56,8 @@
 	
  	
  	public function __construct(){
- 		
+	
  	}
- 	
- 	
 	 public function setId($nId) {
 		$this->nId = $nId;
 	 }
