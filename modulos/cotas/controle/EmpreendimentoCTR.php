@@ -21,11 +21,10 @@
               $oEmpreendimento = $this->recuperar('Empreendimento', array('id'=>$nIdEmpreendimento));
          }
  
-        //   $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
+          $_REQUEST['oEmpreendimento'] = (@$_SESSION['oEmpreendimento']) ? $_SESSION['oEmpreendimento'][0] : $oEmpreendimento[0];
         //   unset($_SESSION['oEmpreendimento']);
  
-         
- 
+        
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");
          else

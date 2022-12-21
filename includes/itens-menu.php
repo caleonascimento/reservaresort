@@ -28,7 +28,7 @@
  */
 
 $vvMenu = array(
-        "Inicio" => [ 
+        "Home" => [ 
             'link'=>ROOT_PATH,
             'icon'=>"fas fa-home",
             'target'=>"",
