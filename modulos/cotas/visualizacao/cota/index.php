@@ -19,6 +19,10 @@
      <?php include_once("includes/head-body.php"); ?>
  
    	<!-- start: page (main content) -->
+      <br>
+      <br>
+      <br>
+      <br>
          <section class="card">
                <header class="card-header">
                      <h2 class="card-title">cota</h2>

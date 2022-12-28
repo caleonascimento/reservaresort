@@ -7,7 +7,6 @@
      <head>
          <!-- Basic -->
          <meta charset="UTF-8">
-     
          <title><?php echo SYSTEM_NAME. ' - '. SYSTEM_INITIALS; ?></title>
          <meta name="keywords" content="<?php echo KEYWORDS; ?>" />
          <meta name="description" content="<?php echo DESCRIPTION; ?>">
@@ -15,10 +14,12 @@
          <?php include_once("includes/head.php"); ?>
          <!-- css custon -->
      </head>
-     
      <?php include_once("includes/head-body.php"); ?>
- 
    	<!-- start: page (main content) -->
+      <br>
+      <br>
+      <br>
+      <br>
          <section class="card">
                <header class="card-header">
                      <h2 class="card-title">Gerenciar Empreendimento</h2>
@@ -41,25 +42,24 @@
                                                <th width="1%">
                                                      <a href="javascript: marcarTodosCheckBoxFormulario('Empreendimento')"><i class="icon fa fa-check"></i></a>
                                                </th>
-                                               
-														 <th width="1%">Id</th>
-														 <th>Endereco</th>
-														 <th>Cep</th>
-														 <th>Tipo</th>
-														 <th>Descricao</th>
+                                                      <th width="1%">Id</th>
+                                                      <th>Endereco</th>
+                                                      <th width="8%">Cep</th>
+                                                      <th width="1%">Tipo</th>
+                                                      <th>Descricao</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                              <tbody>
  					 <?php foreach($voEmpreendimento as $oEmpreendimento){ ?>                                                  
- 					        <tr>
+ 					      <tr>
                                                     <td><input onClick="JavaScript: atualizaAcoes('Empreendimento')" type="checkbox" value="<?php echo $oEmpreendimento->getId(); ?>" name="fIdEmpreendimento[]" /></td>
                                                          						
-									 <td><?php echo $oEmpreendimento->getId(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getEndereco(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getCep(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getTipo(); ?></td>						
-									 <td><?php echo $oEmpreendimento->getDescricao(); ?></td>
-                                                 </tr>
+                                                <td><?php echo $oEmpreendimento->getId(); ?></td>						
+                                                <td><?php echo $oEmpreendimento->getEndereco(); ?></td>						
+                                                <td><?php echo $oEmpreendimento->getCep(); ?></td>						
+                                                <td><?php echo $oEmpreendimento->getTipo(); ?></td>						
+                                                <td><?php echo $oEmpreendimento->getDescricao(); ?></td>
+                                    </tr>
  					<?php } ?>                                  
  				      </tbody>
                                    </table>

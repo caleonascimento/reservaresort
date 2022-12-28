@@ -19,6 +19,8 @@
      <?php include_once("includes/head-body.php"); ?>
  
  	       <!-- start: page -->
+		   <br>
+		   <br>
  		<div class="row mt-5">
  		   <div class="col-lg-12">
  			 <form id="summary-form" action="?action=Cota.processaFormulario" class="form-horizontal" name="formCota" method="post">

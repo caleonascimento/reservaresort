@@ -24,8 +24,10 @@
          unset($_SESSION['oCota']);
  
          $_REQUEST['voUnidade'] = $this->recuperar("Unidade", array());
-		$_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
-		
+
+		$_REQUEST['voUsuario'] = $this->recuperar("Usuario", array());
+
+		
  
          if($_REQUEST['sOP'] == "Detalhar")
              include_once($this->_PATHVIEW . "/detalhe.php");
